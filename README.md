@@ -1,2 +1,16 @@
 # LatestNews
- Latest News
+
+Latest News
+
+
+-Used Libraries
+
+• Retrofit
+• Navigation Component
+• Fragment
+• RxJava
+• RecyclerView
+• SharedPreferences
+
+
+
