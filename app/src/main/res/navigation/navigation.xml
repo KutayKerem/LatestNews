@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/HomeFragment"
+    tools:ignore="InvalidNavigation">
+
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.app.latestnews.pages.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_WebNewFragment"
+            app:destination="@id/WebNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WebNewFragment"
+        android:name="com.app.latestnews.pages.WebNewFragment"
+        android:label="fragment_web_new"
+        tools:layout="@layout/fragment_web_new" >
+        <action
+            android:id="@+id/action_WebNewFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+</navigation>
