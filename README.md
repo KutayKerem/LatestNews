@@ -2,7 +2,7 @@
 
 Latest News
 
-![Açıklama]()
+
 
 
 -Used Libraries
